@@ -7,5 +7,6 @@ Found that Extra Trees model was performing the best-Using the tuned Extra Trees
 1️⃣ Main_Data.csv → The primary dataset used for training and testing the machine learning model.
 2️⃣ Predict_RUL.csv → A dataset without RUL, where predictions need to be made using the trained model.
 3️⃣ Predict_RUL_results.csv → The same as Predict_RUL.csv, but with an added Predicted RUL column from your model.
+Battery RUL Code.py-> Python Code
 
 

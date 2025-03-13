@@ -22,22 +22,15 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 from sklearn.neural_network import MLPRegressor
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
-
-
-
 # 🔹 Step 1: Load Battery Dataset
 file_path = "/Users/estherchung/Desktop/Main_Data.csv"  # Update this with your dataset path
 df = pd.read_csv(file_path)
-
 # 🔹 Step 2: Define Features (X) and Target (y)
 target_column = "RUL"  # Battery Remaining Useful Life
 X = df.drop(columns=[target_column])  
 y = df[target_column]
-
-
 # 🔹 Step 3: Split Data into Training and Testing (80% Train, 20% Test)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
 # 🔹 Step 4: Define Multiple Models
 models = {
     "Linear Regression": LinearRegression(),
@@ -47,7 +40,6 @@ models = {
     "Neural Network": MLPRegressor(hidden_layer_sizes=(100,), max_iter=500, random_state=42),
     "SVR": SVR(kernel="rbf")
 }
-
 # 🔹 Step 5: Train, Predict & Evaluate Each Model
 results = []
 

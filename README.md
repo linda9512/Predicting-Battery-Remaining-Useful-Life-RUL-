@@ -22,7 +22,7 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 from sklearn.neural_network import MLPRegressor
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
-# 🔹 Step 1: Load Battery Dataset
+# Step 1: Load Battery Dataset
 file_path = "/Users/estherchung/Desktop/Main_Data.csv"  # Update this with your dataset path
 df = pd.read_csv(file_path)
 # 🔹 Step 2: Define Features (X) and Target (y)

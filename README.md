@@ -36,13 +36,14 @@ o	numpy → For numerical computations (arrays, mathematical operations)
 •	Machine Learning and Model Handling
 o	joblib → For saving and loading machine learning models efficiently
 o	scikit-learn → For machine learning tasks, including: 
-	train_test_split, GridSearchCV → For data splitting and hyperparameter tuning
-	mean_squared_error, mean_absolute_error, r2_score → For model evaluation
-	LinearRegression → For linear regression models
-	RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor → For tree-based regression models
-	MLPRegressor → For neural network-based regression
-	SVR → For Support Vector Regression
-	StandardScaler → For feature scaling
+o	train_test_split, GridSearchCV → For data splitting and hyperparameter tuning
+o	mean_squared_error, mean_absolute_error, r2_score → For model evaluation
+o	LinearRegression → For linear regression models
+o	RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor → For tree-based regression models
+o	MLPRegressor → For neural network-based regression
+o	SVR → For Support Vector Regression
+o	StandardScaler → For feature scaling
+
 
 •	Data Visualization
 o	matplotlib → For creating basic plots and graphs

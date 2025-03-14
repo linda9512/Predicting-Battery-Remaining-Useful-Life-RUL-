@@ -17,6 +17,7 @@ Step 1: Download Main_Data.csv from this GitHub
 Step 2: Preprocess the data using Jupyter Notebook
 1.	Launch Jupyter Notebook on your laptop.
 2.	Check for missing values in each column and remove any rows containing missing data. Then, identify and eliminate any duplicate rows in the dataset.
+   
 (Drops all rows with missing values)
 df_cleaned = df.dropna()  
 

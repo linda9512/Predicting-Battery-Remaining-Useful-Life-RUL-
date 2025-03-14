@@ -51,5 +51,55 @@ o	seaborn → For advanced statistical visualizations
 
 
 
+#  Running Instructions
+
+# Input Database
+To run the analysis, ensure you have the following datasets stored in the appropriate location:
+•	Main_Data.csv → The primary dataset used for training and testing the machine learning model.
+•	Predict_RUL.csv → A dataset without RUL values, where predictions will be made using the trained model.
+
+# Model Training & Evaluation
+The dataset is split into training (80%) and testing (20%) sets to evaluate model performance. We train and test the following six machine learning models:
+•	Linear Regression
+•	Random Forest
+•	Extra Trees
+•	Gradient Boosting
+•	Neural Network (MLP Regressor)
+•	Support Vector Regression (SVR)
+Each model is assessed using standard regression metrics:
+•	Mean Squared Error (MSE)
+•	Mean Absolute Error (MAE)
+•	R² Score
+Among these models, Extra Trees demonstrated the best predictive performance and was selected for further fine-tuning.
+
+# Model Fine-Tuning
+To optimize performance, we fine-tune the Random Forest, Gradient Boosting, and Extra Trees models(Because these 3 models had the highest performance values) by adjusting:
+•	Number of estimators
+•	Depth of trees
+•	Learning rate
+•	Other relevant hyperparameters
+After tuning, Extra Trees continued to outperform the other models, proving its robustness in predicting battery RUL.
+
+# Make Predictions
+Once the model is trained, generate predictions for the unseen dataset (Predict_RUL.csv). This dataset contains all the features present in the main dataset, except for the RUL column, as our goal is to predict RUL.
+This will output a file:
+Predict_RUL_results.csv → Contains the predicted RUL values.
+
+# Feature Importance Analysis
+To interpret the relationships between RUL and battery characteristics, we perform:
+•	Correlation Matrices → Identify key factors influencing battery lifespan.
+•	Scatter Plots → Visualize feature relationships with RUL.
+
+
+
+
+
+
+
+
+
+
+
+
 
 

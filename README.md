@@ -23,15 +23,16 @@ df_cleaned = df.dropna()
 (Remove duplicate rows)
 df_cleaned = df_cleaned.drop_duplicates()
 
-Step 3: Save the Cleaned Data
-1.Save the cleaned dataset as  Main_Data.csv on your laptop.
+Step 3: Save the Cleaned Data=>Save the cleaned dataset as  Main_Data.csv on your laptop.
 
 # Python packages required to run the code
 •	System and File Handling
 o	os → For interacting with the operating system (file handling, paths)
+
 •	Data Processing and Computation
 o	pandas → For handling structured data (DataFrames, CSV files)
 o	numpy → For numerical computations (arrays, mathematical operations)
+
 •	Machine Learning and Model Handling
 o	joblib → For saving and loading machine learning models efficiently
 o	scikit-learn → For machine learning tasks, including: 
@@ -42,6 +43,7 @@ o	scikit-learn → For machine learning tasks, including:
 	MLPRegressor → For neural network-based regression
 	SVR → For Support Vector Regression
 	StandardScaler → For feature scaling
+
 •	Data Visualization
 o	matplotlib → For creating basic plots and graphs
 o	seaborn → For advanced statistical visualizations
